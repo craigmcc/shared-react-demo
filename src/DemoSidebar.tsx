@@ -32,6 +32,7 @@ const DemoSidebar = () => {
         { name: "Callout",              to: "/callout" },
         { name: "CheckBox",             to: "/check-box" },
         { name: "EditButton",           to: "/edit-button" },
+        { name: "ForwardButton",        to: "/forward-button" },
         { name: "Pagination",           to: "/pagination" },
         { name: "SearchBar",            to: "/search-bar" },
     ];

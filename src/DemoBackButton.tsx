@@ -1,4 +1,4 @@
-// DemoBackButton -------------------------------------------------------------
+// DemoBackButton ------------------------------------------------------------
 
 // Demos for the BackButton component.
 
@@ -8,7 +8,7 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import {BackButton, BackButtonVariant} from "@craigmcc/shared-react";
+import {BackButton, ButtonVariant} from "@craigmcc/shared-react";
 
 // Internal Modules ---------------------------------------------------------
 
@@ -18,7 +18,7 @@ import DemoSidebar from "./DemoSidebar";
 
 const DemoBackButton = () => {
 
-    const VARIANTS: BackButtonVariant[] = [
+    const VARIANTS: ButtonVariant[] = [
         "primary",
         "secondary",
         "success",
@@ -40,8 +40,17 @@ const DemoBackButton = () => {
                         <Col className="col-2 text-center">
                             <h5>Variant</h5>
                         </Col>
-                        <Col className="text-center">
-                            <h5>Example</h5>
+                        <Col className="text-start">
+                            <h5>Small</h5>
+                        </Col>
+                        <Col className="text-start">
+                            <h5>Medium</h5>
+                        </Col>
+                        <Col className="text-start">
+                            <h5>Large</h5>
+                        </Col>
+                        <Col className="text-start">
+                            <h5>Disabled</h5>
                         </Col>
                     </Row>
                     {VARIANTS.map((variant) => (
@@ -51,6 +60,25 @@ const DemoBackButton = () => {
                             </Col>
                             <Col>
                                 <BackButton
+                                    size="small"
+                                    variant={variant}
+                                />
+                            </Col>
+                            <Col>
+                                <BackButton
+                                    size="medium"
+                                    variant={variant}
+                                />
+                            </Col>
+                            <Col>
+                                <BackButton
+                                    size="large"
+                                    variant={variant}
+                                />
+                            </Col>
+                            <Col>
+                                <BackButton
+                                    disabled={true}
                                     variant={variant}
                                 />
                             </Col>

@@ -1,6 +1,6 @@
-// DemoAddButton -------------------------------------------------------------
+// DemoForwardButton ---------------------------------------------------------
 
-// Demos for the AddButton component.
+// Demos for the ForwardButton component.
 
 // External Modules ----------------------------------------------------------
 
@@ -8,7 +8,7 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import {AddButton, ButtonVariant} from "@craigmcc/shared-react";
+import {ForwardButton, ButtonVariant} from "@craigmcc/shared-react";
 
 // Internal Modules ---------------------------------------------------------
 
@@ -16,7 +16,7 @@ import DemoSidebar from "./DemoSidebar";
 
 // Component Details --------------------------------------------------------
 
-const DemoAddButton = () => {
+const DemoForwardButton = () => {
 
     const VARIANTS: ButtonVariant[] = [
         "primary",
@@ -30,7 +30,7 @@ const DemoAddButton = () => {
     ]
 
     return (
-        <Container fluid="md" id="DemoAddButton">
+        <Container fluid="md" id="DemoForwardButton">
             <Row>
                 <Col className="col-3">
                     <DemoSidebar/>
@@ -59,25 +59,25 @@ const DemoAddButton = () => {
                                 {variant}
                             </Col>
                             <Col>
-                                <AddButton
+                                <ForwardButton
                                     size="small"
                                     variant={variant}
                                 />
                             </Col>
                             <Col>
-                                <AddButton
+                                <ForwardButton
                                     size="medium"
                                     variant={variant}
                                 />
                             </Col>
                             <Col>
-                                <AddButton
+                                <ForwardButton
                                     size="large"
                                     variant={variant}
                                 />
                             </Col>
                             <Col>
-                                <AddButton
+                                <ForwardButton
                                     disabled={true}
                                     variant={variant}
                                 />
@@ -92,4 +92,4 @@ const DemoAddButton = () => {
 
 }
 
-export default DemoAddButton;
+export default DemoForwardButton;

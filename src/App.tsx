@@ -16,6 +16,7 @@ import DemoCallout from "./DemoCallout";
 import DemoBackButton from "./DemoBackButton";
 import DemoEditButton from "./DemoEditButton";
 import DemoForwardButton from "./DemoForwardButton";
+import DemoTextButton from "./DemoTextButton";
 import DemoWelcome from "./DemoWelcome";
 
 // Component Details ---------------------------------------------------------
@@ -30,6 +31,7 @@ function App() {
           <Route path="callout" element={<DemoCallout/>}/>
           <Route path="edit-button" element={<DemoEditButton/>}/>
           <Route path="forward-button" element={<DemoForwardButton/>}/>
+          <Route path="text-button" element={<DemoTextButton/>}/>
           <Route path="" element={<DemoWelcome/>}/>
         </Routes>
       </Router>

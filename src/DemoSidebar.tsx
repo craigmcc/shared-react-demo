@@ -35,6 +35,7 @@ const DemoSidebar = () => {
         { name: "ForwardButton",        to: "/forward-button" },
         { name: "Pagination",           to: "/pagination" },
         { name: "SearchBar",            to: "/search-bar" },
+        { name: "TextButton",           to: "/text-button"},
     ];
 
     return (
